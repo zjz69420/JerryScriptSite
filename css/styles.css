@@ -29,8 +29,8 @@
 
 #logo-img{
 	background: url('../images/logo.webp') no-repeat;
-	width: 150px;
-	height: 150px;
+	width: 100px;
+	height: 100px;
 	margin: 10px 15px 10px 0;
 	background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
