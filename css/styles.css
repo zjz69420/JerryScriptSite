@@ -1,0 +1,150 @@
+﻿body{
+	font-size: 16px;
+	color: #fff;
+	background-color: #212121;
+	font-family: font-family: 'Oxygen', sans-serif;
+}
+/**Header**/
+
+#header-nav{
+	background: linear-gradient(-45deg, #380036, #0d324d);
+	background: linear-gradient(300deg,#380036,#0d324d);
+  	background-size: 400% 400%;
+    animation: gradient-animation 12s ease infinite;	
+    /*height: 100vh;*/	
+	border: 0;
+}
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+#logo-img{
+	background: url('../images/logo.webp') no-repeat;
+	width: 150px;
+	height: 150px;
+	margin: 10px 15px 10px 0;
+	background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
+}
+#Gta5Logo{
+	max-width: 30px;
+	max-height:30px;
+}
+.navbar-brand {
+	padding-top: 25px;
+}
+
+.navbar-brand h1 {
+	font-family: 'Lora', serif;
+	color: #d3d3d3;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font: weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration:none;
+}
+.navbar-brand p {
+	color: #000;
+	/*text-transform: uppercase;*/
+	font-size: 1em;
+	margin-top: 15px
+}
+.navbar-brand p span{
+	vertical-align: middle;
+}
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #d3d3d3;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #565656;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid white;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* HOME PAGE */
+.container .jumbotron {
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+}
+
+/* END HOME PAGE */
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+	.container .jumbotron {
+    background: url('../images/MCQ_Test.jpg') no-repeat;
+    height: 675px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  /* End Header */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /*HCIBOT*/
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Logo */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Logo */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  /* End Header */
+}
