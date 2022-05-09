@@ -1,2 +1,3 @@
 # JerryScriptSite
-Very bad template
+Very Basic Site
+
